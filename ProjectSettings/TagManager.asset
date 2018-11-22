@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -13,11 +14,11 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
   - 
-  - 
-  - 
-  - 
+  - Sites
+  - Objects
+  - Characters
+  - Dialog
   - 
   - 
   - 
@@ -40,4 +41,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 3593819787
+    locked: 0
+  - name: Background
+    uniqueID: 877528201
+    locked: 0
+  - name: Character
+    uniqueID: 3846783299
+    locked: 0
+  - name: Objects
+    uniqueID: 461977301
+    locked: 0
+  - name: Complement
+    uniqueID: 1265684811
+    locked: 0
+  - name: UI
+    uniqueID: 848511329
+    locked: 0
+  - name: LevelSelector
+    uniqueID: 2703540721
     locked: 0

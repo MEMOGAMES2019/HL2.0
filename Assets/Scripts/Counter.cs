@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class Counter : MonoBehaviour {
-
+public class Counter : MonoBehaviour
+{
     public Text timeToGo;
 
     private Image image;
@@ -16,12 +14,13 @@ public class Counter : MonoBehaviour {
         gameManager = GameObject.FindGameObjectWithTag("GameController");
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         transform.SetParent(GameObject.Find("Canvas").GetComponent<RectTransform>());
         GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
         image = GetComponent<Image>();
-	}
+    }
 
     // Time since the game started and maxTime
     public void PaintTheTime(float time, float maxTime)

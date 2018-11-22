@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class DisplayPanel : MonoBehaviour {
-
+public class DisplayPanel : MonoBehaviour
+{
     //first you need the RectTransform component of your canvas
     private RectTransform canvasRect;
 
@@ -15,7 +13,7 @@ public class DisplayPanel : MonoBehaviour {
     }
 
     //http://answers.unity3d.com/questions/799616/unity-46-beta-19-how-to-convert-from-world-space-t.html
-    public void instantiatePanel(GameObject panel, GameObject target)
+    public void InstantiatePanel(GameObject panel, GameObject target)
     {
         p = Instantiate(panel);
         p.transform.SetParent(canvasRect);
@@ -38,7 +36,7 @@ public class DisplayPanel : MonoBehaviour {
         panelTransform.localScale = Vector3.one;
     }
 
-    public GameObject instantiatePanel(GameObject panel)
+    public GameObject InstantiatePanel(GameObject panel)
     {
         p = Instantiate(panel);
         p.transform.SetParent(canvasRect);

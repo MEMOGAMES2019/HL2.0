@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LuggageManager : MonoBehaviour
 {
-
     // This images shows the target
     public GameObject popUpPanel;
 
@@ -117,7 +116,7 @@ public class LuggageManager : MonoBehaviour
     {
 
         GameObject instance = null;
-        instance = (success) ? displayPanel.instantiatePanel(right) : displayPanel.instantiatePanel(wrong);
+        instance = (success) ? displayPanel.InstantiatePanel(right) : displayPanel.InstantiatePanel(wrong);
         instance.SetActive(true);
         Destroy(instance, 0.7f);
 
@@ -246,7 +245,7 @@ public class LuggageManager : MonoBehaviour
     public void Continue()
     {
         if (GameObject.Find("CharacterController"))
-            GameObject.Find("CharacterController").GetComponent<CharactersController>().airport = true;
+            GameObject.Find("CharacterController").GetComponent<CharactersController>().Airport = true;
 
         SceneManager.LoadScene("Black");
     }

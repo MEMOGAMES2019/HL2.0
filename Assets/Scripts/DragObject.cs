@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 
@@ -8,8 +6,8 @@ using UnityEngine;
 ///It is responsible for the drags of the mouse
 ///Se encarga de los movimientos del raton 
 ///</summary>
-public class DragObject: MonoBehaviour {
-
+public class DragObject : MonoBehaviour
+{
     public GameObject[] destiny;
 
     private Collider2D coll;
@@ -22,13 +20,13 @@ public class DragObject: MonoBehaviour {
     {
         coll = GetComponent<Collider2D>();
     }
-    
+
     //no se usa comprobar
     private void OnMouseOver()
     {
         Debug.Log("OnMouseOver");
     }
-    
+
     void OnMouseDown()
     {
         Debug.Log("click on" + gameObject.name);
