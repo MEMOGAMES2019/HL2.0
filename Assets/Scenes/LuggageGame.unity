@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -549,7 +549,7 @@ Prefab:
     - target: {fileID: 224322180092951666, guid: de792ac7d60169a4880319405e7c254e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -2.0999908
+      value: -2.0999756
       objectReference: {fileID: 0}
     - target: {fileID: 224322180092951666, guid: de792ac7d60169a4880319405e7c254e,
         type: 2}
@@ -1726,7 +1726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &420590859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4331,16 +4331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3bcd05423b2a64a8ba7f525af23c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawCopy: 1
-  flushInterval: 1
-  checkInterval: 3
-  storageType: net
-  traceFormat: xapi
-  host: https://analytics.e-ucm.es/
-  trackingCode: 
-  debug: 0
-  username: 
-  password: 
 --- !u!4 &1398604622
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,7 +5041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1682318298
 RectTransform:
   m_ObjectHideFlags: 0
