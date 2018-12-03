@@ -3,6 +3,10 @@ using UnityEngine;
 
 //The luggage panel has this script, because this controls what clothes
 //can be put into.
+
+/// <summary>
+/// Controlador las acciones que se puede hacer con la ropa.
+/// </summary>
 public class ClothesController : MonoBehaviour
 {
 

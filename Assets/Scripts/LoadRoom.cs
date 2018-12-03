@@ -27,10 +27,6 @@ public class LoadRoom : MonoBehaviour
     void Awake()
     {
 
-        CharactersController c = GameObject.Find("CharacterController").GetComponent<CharactersController>();
-
-        c.Control();
-
         pum = GameObject.Find("PickUpManager");
         if (pum == null)
         {

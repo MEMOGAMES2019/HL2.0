@@ -244,9 +244,6 @@ public class LuggageManager : MonoBehaviour
 
     public void Continue()
     {
-        if (GameObject.Find("CharacterController"))
-            GameObject.Find("CharacterController").GetComponent<CharactersController>().Airport = true;
-
         SceneManager.LoadScene("Black");
     }
 
