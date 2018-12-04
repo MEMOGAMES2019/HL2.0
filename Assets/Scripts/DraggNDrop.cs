@@ -5,7 +5,7 @@ public class DraggNDrop : MonoBehaviour
 {
     #region Constantes
 
-    private readonly float OFFSET_Z = 10.0f;
+    private float OFFSET_Z { get { return 10.0f; } }
 
     #endregion
 

@@ -17,16 +17,11 @@ public class Luggage : MonoBehaviour
     /// <summary>
     /// Comprueba si el objeto seleccionado es correcto o no.
     /// </summary>
-    private bool Correct { get; set; }
+    private bool Correct { get; set; } = false;
 
     #endregion
 
     #region Eventos
-
-    /// <summary>
-    /// Inicialziación del componente.
-    /// </summary>
-    private void Start() { Correct = false; }
 
     /// <summary>
     /// Cuando un objeto empiezan a superposicionarse.

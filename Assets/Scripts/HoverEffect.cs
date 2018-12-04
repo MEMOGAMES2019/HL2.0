@@ -12,7 +12,7 @@ public class HoverEffect : MonoBehaviour
 
     #region Propiedades
 
-    private Color HoverColor { get; set; }
+    private Color HoverColor { get { return Color.cyan; } }
 
     private SpriteRenderer Render { get; set; }
 
@@ -30,7 +30,6 @@ public class HoverEffect : MonoBehaviour
     private void Start()
     {
         Render = gameObject.GetComponent<SpriteRenderer>();
-        HoverColor = Color.cyan;
     }
 
     /// <summary>
