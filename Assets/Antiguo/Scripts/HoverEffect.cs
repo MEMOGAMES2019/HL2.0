@@ -2,7 +2,7 @@
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class HoverEffect : MonoBehaviour
+public class HoverEffectAntiguo : MonoBehaviour
 {
     private Color hoverColor;
     private SpriteRenderer render;

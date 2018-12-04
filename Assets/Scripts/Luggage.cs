@@ -1,32 +1,69 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Luggage : MonoBehaviour {
-
-    public string[] ropa;
-    bool correct = false;
+public class Luggage : MonoBehaviour
+{
+    #region Atributos
     
+    /// <summary>
+    /// Lista de la ropa y/o complementos que el jugador tiene que meter en la maleta.
+    /// </summary>
+    public List<GameObject> Ropa;
+
+    #endregion
+
+    #region Propiedades
+
+    /// <summary>
+    /// Comprueba si el objeto seleccionado es correcto o no.
+    /// </summary>
+    private bool Correct { get; set; }
+
+    #endregion
+
+    #region Eventos
+
+    /// <summary>
+    /// Inicialziación del componente.
+    /// </summary>
+    private void Start() { Correct = false; }
+
+    /// <summary>
+    /// Cuando un objeto empiezan a superposicionarse.
+    /// </summary>
+    /// <param name="collision">Objeto superposicionado.</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        int i = 0;
-        while (i < ropa.Length && collision.gameObject.name != ropa[i]) { i++; }
-        if(i < ropa.Length)
-            correct = true;
+        Correct = Ropa.Contains(collision.gameObject);
     }
+
+    /// <summary>
+    /// Cuando un objeto deja de superposicionarse.
+    /// </summary>
+    /// <param name="collision">Objeto superposicionado.</param>
     private void OnTriggerExit2D(Collider2D collision)
     {
-        correct = false;
+        Correct = false;
     }
-    
-    public bool isCorrect()
+
+    #endregion
+
+    #region Métodos públicos
+
+    /// <summary>
+    /// Determina si el objeto es correcto o no.
+    /// </summary>
+    /// <returns>Objeto correcto.</returns>
+    public bool IsCorrect()
     {
-        if (correct)
+        if (Correct)
         {
-            correct = false;
+            Correct = false;
             return true;
         }
-        else
-            return false;
+        return false;
     }
+
+    #endregion
+
 }
