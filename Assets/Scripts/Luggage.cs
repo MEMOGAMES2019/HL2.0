@@ -8,7 +8,7 @@ public class Luggage : MonoBehaviour
     /// <summary>
     /// Lista de la ropa y/o complementos que el jugador tiene que meter en la maleta.
     /// </summary>
-    public List<GameObject> Ropa;
+    public List<string> Ropa;
 
     #endregion
 
@@ -29,7 +29,7 @@ public class Luggage : MonoBehaviour
     /// <param name="collision">Objeto superposicionado.</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Correct = Ropa.Contains(collision.gameObject);
+        Correct = Ropa.Contains(collision.gameObject.name);
     }
 
     /// <summary>

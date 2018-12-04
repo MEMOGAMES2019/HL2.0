@@ -869,8 +869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ropa:
-  - {fileID: 459743015}
-  - {fileID: 943055299}
+  - CamisaHawaii
+  - Pantalones
 --- !u!1 &654277644
 GameObject:
   m_ObjectHideFlags: 0

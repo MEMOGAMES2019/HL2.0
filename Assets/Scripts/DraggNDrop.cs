@@ -11,7 +11,7 @@ public class DraggNDrop : MonoBehaviour
 
     #region Atributos
 
-    public Luggage Maleta;
+    private Luggage Maleta { get; set; }
 
     #endregion
 
@@ -30,6 +30,11 @@ public class DraggNDrop : MonoBehaviour
     #endregion
 
     #region Eventos
+
+    private void Start()
+    {
+        Maleta = GameObject.Find("Maleta").GetComponent<Luggage>();
+    }
 
     /// <summary>
     /// Evento cuando se clicka el objeto.
