@@ -3,7 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class Wardrove : MonoBehaviour
+public class WardroveAntiguo : MonoBehaviour
 {
 
     public Vector3 pos;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class DraggNDrop : MonoBehaviour
 {
     #region Constantes

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(PolygonCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class HoverEffect : MonoBehaviour
 {

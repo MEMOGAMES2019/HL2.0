@@ -1,20 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Wardrobe : MonoBehaviour {
+public class Wardrove : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-        
-    }
+    // Use this for initialization
+    void Start() { }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
+
         }
     }
 }
