@@ -6,7 +6,7 @@ public class HoverEffectAntiguo : MonoBehaviour
 {
     private Color hoverColor;
     private SpriteRenderer render;
-    private Wardrove wardroveDoor;
+    private WardroveAntiguo wardroveDoor;
     private LuggageManager gameManager;
     public Texture2D cursorTexture;
     private readonly CursorMode cursorMode = CursorMode.Auto;
@@ -17,7 +17,7 @@ public class HoverEffectAntiguo : MonoBehaviour
         this.gameManager = GameObject.FindObjectOfType<LuggageManager>();
         render = this.gameObject.GetComponent<SpriteRenderer>();
         hoverColor = Color.cyan;
-        this.wardroveDoor = this.gameObject.GetComponent<Wardrove>();
+        this.wardroveDoor = this.gameObject.GetComponent<WardroveAntiguo>();
     }
 
     private void OnMouseEnter()
