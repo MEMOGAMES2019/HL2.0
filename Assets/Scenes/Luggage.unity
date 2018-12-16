@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -403,10 +403,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 129841899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa98ffc506747a5468540e0fb6951d0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cbe9afb9a1d2ee4b9de2f128275c423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parteAbierta: {fileID: 169170248}
+  puertaOtroEstado: {fileID: 169170248}
+  active: 0
 --- !u!1 &169170248
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,10 +545,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 169170248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01d865a2c1575c428973f39403458e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cbe9afb9a1d2ee4b9de2f128275c423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parteAbierta: {fileID: 129841899}
+  puertaOtroEstado: {fileID: 129841899}
+  active: 1
 --- !u!1 &170934534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,10 +1776,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 709892984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01d865a2c1575c428973f39403458e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cbe9afb9a1d2ee4b9de2f128275c423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parteAbierta: {fileID: 740165543}
+  puertaOtroEstado: {fileID: 740165543}
+  active: 1
 --- !u!1 &740165543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,10 +1918,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 740165543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa98ffc506747a5468540e0fb6951d0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cbe9afb9a1d2ee4b9de2f128275c423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parteAbierta: {fileID: 709892984}
+  puertaOtroEstado: {fileID: 709892984}
+  active: 0
 --- !u!1 &1313188274
 GameObject:
   m_ObjectHideFlags: 0
